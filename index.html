@@ -1,0 +1,25 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		body{
+			width: 1000px;
+			height: 1000px;
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+</head>
+<body>
+	<input type="file" id="file" />
+	<input type="button" id="updata" value="上传">
+	<script src="index.js"></script>
+	<script>
+		document.querySelector("#updata").addEventListener("click",function() {
+			var up = new updataFile({"id":"#file"});
+		},false)
+	</script>
+</body>
+</html>
